@@ -1,0 +1,14 @@
+name: stylegan2-ada-pytorch
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pytorch=1.7.1
+  - cudatoolkit>=11.0  # Replace with your specific CUDA toolkit version
+  - click
+  - requests
+  - tqdm
+  - pyspng
+  - ninja
+  - imageio-ffmpeg=0.4.3
+  - typer
