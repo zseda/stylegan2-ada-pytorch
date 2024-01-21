@@ -76,7 +76,7 @@ def generate(
     truncation_psi: float = typer.Option(1, help="Truncation psi", show_default=True),
     noise_mode: str = typer.Option("const", help="Noise mode", show_default=True),
     outdir: str = typer.Option(
-        "data/1birinci/datasets/generated_images",
+        "/data/1birinci/datasets/generated_images",
         help="Where to save the output ZIP file",
         show_default=True,
     ),
