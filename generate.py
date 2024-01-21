@@ -71,7 +71,10 @@ app = typer.Typer()
 
 @app.command()
 def generate(
-    network_pkl: str = typer.Argument(..., help="Network pickle filename"),
+    network_pkl: str = typer.Option(
+        "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/cifar10.pkl",
+        help="Network pickle filename",
+    ),
     seeds: List[int] = typer.Option(None, help="List of random seeds"),
     truncation_psi: float = typer.Option(1, help="Truncation psi", show_default=True),
     noise_mode: str = typer.Option("const", help="Noise mode", show_default=True),
