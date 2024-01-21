@@ -8,7 +8,8 @@ dependencies:
   - click
   - requests
   - tqdm
-  - pyspng
   - ninja
-  - imageio-ffmpeg=0.4.3
   - typer
+  - pip:
+    - pyspng
+    - imageio-ffmpeg
